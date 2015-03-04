@@ -30,7 +30,8 @@ call vundle#rc()
 
 
 " Plugin emmet config
-let g:user_emmet_expandabbr_key='<Tab>'
+" let g:user_emmet_expandabbr_key='<Tab>'
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 " Plugin list
 Bundle 'mattn/emmet-vim'
@@ -52,7 +53,7 @@ filetype indent on
 set autoread
 
 " Set vi number line
-" set nu
+set nu
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
