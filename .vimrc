@@ -142,7 +142,10 @@ set encoding=utf8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
-
+" Popup color.
+hi Pmenu ctermfg=15 ctermbg=4 
+hi PmenuSel  ctermfg=0 ctermbg=3
+hi PmenuSbar ctermfg=15 ctermbg=2
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -394,7 +397,7 @@ function! <SID>BufcloseCloseIt()
    if buflisted(l:currentBufNum)
      execute("bdelete! ".l:currentBufNum)
    endif
-endfunctio
+ endfunctio
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -489,3 +492,5 @@ let g:neocomplcache_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplcache_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+
