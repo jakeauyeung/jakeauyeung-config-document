@@ -126,6 +126,7 @@ set tm=500
 syntax enable
 
 colorscheme desert
+highlight LineNr ctermfg=2
 
 " Set extra options when running in GUI mode
 if has("gui_running")
