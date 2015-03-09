@@ -45,6 +45,9 @@ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 map <F4> :NERDTreeMirror<CR>
 map <F4> :NERDTreeToggle<CR>
 
+" Ctrlp
+let g:ctrlp_map = '<c-p>'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
