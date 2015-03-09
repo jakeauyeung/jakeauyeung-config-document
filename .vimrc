@@ -33,11 +33,17 @@ call vundle#rc()
 Bundle 'mattn/emmet-vim'
 Bundle 'ctrlp.vim'
 Bundle 'leafgarland/typescript-vim'
+Bundle 'scrooloose/nerdtree'
 
 
 " Plugin settings
+
+" Emmet
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
+" NerdTree
+map <F4> :NERDTreeMirror<CR>
+map <F4> :NERDTreeToggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
