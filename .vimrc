@@ -34,7 +34,7 @@ Bundle 'mattn/emmet-vim'
 Bundle 'ctrlp.vim'
 Bundle 'leafgarland/typescript-vim'
 Bundle 'scrooloose/nerdtree'
-
+Bundle 'pangloss/vim-javascript'
 
 " Plugin settings
 
@@ -72,6 +72,8 @@ let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
+" set flodmethod
+set foldmethod=manual
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
